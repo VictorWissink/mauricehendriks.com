@@ -1,0 +1,164 @@
+.header {
+width: 100%;
+background-image: url('./onlySig.png');
+height: 220px;
+background-size: cover;
+background-position: center;
+max-width: 1390px;
+margin-left: auto;
+margin-right: auto;
+}
+
+body {
+  margin: 0px;
+  min-width: 320px;
+}
+
+.about {
+ /* display: grid; */
+ max-width: 1240px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 80%;
+ align-items: center;
+ /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+ display: grid;
+ grid-template-columns: 1fr 3fr;
+ grid-template-rows: auto;
+ grid-template-areas:
+  "aboutImage . aboutText aboutText";
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.aboutImage img {
+  /* width: 300px;
+  padding: 60px; */
+}
+
+.aboutImage {
+  background-image: url('./maurice.jpeg');
+  height: 220px;
+  background-size: cover;
+  min-height: 330px;
+  background-position: center;
+}
+.aboutText {
+  padding-left: 120px;
+}
+
+.contactTitle {
+    text-align: center;
+    font-size: 3em;
+}
+
+.contactFormMain {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactContainerMain {
+  display: grid;
+}
+
+.contactContainerMain .rowMain {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nameInputMain {
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    background-color: #EEEEEE;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 3px;
+}
+
+.emailInputMain {
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    background-color: #EEEEEE;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 3px;
+}
+
+.formMessageMain {
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+    border: none;
+    background-color: #EEEEEE;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 3px;
+}
+
+.sendButtonMain {
+    margin-bottom: 20px;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background-color: #969696;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .header {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .aboutImage img {
+    /* width: 230px; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 100px;
+  }
+
+  .about {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .aboutImage {
+        height: 560px;
+  }
+  .aboutText {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    height: 78px;
+  }
+}

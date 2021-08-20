@@ -1,0 +1,696 @@
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" type="text/css" href="./item.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<div class="header">
+</div>
+
+<div class="body">
+  <section class="about">
+    <div class="aboutImage">
+      <!-- <img src="./maurice.jpeg"/> -->
+    </div>
+    <div class="aboutText">
+      <h1>About</h1>
+      <p>A new kind of  abstract expressionism is what Maurice Hendriks calls his latest series named: Shifts.
+"The reason my latest series is named shifts is because of the way acrylic paint forms into its own shape after being in contact with synthetic paint. This uncontrollable change makes the painting shift into its own organic shape. This process will be eventually finished by hand into a dynamic composition."</p>
+    </div>
+  </section>
+  <section class="artSection">
+    <div class="container">
+      <div class="item">
+        <h3 class="itemTitle">Shifts</h3>
+        <div class="imgContainer">
+          <img class="itemImage" src="./images/paintings/shifts2.jpg" onclick="openModal('item1')">
+          <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item1')" name="item1">
+          <div class="details">
+            <!-- <p class="amountPhotos">4 photos</p> -->
+            <p class="type">Oil/Acrylic on panel/wood</p>
+            <p class="size">75 x 57 cm</p>
+          </div>
+          <div class="detailsButton" onclick="openModal('item1')" name="item1" role="button">
+            <p>Details</p>
+          </div>
+        </div>
+        <div class="modal" id="item1Modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="imageGallery">
+            <div class="row">
+              <!-- The expanding image container -->
+              <div class="container2">
+                <!-- Expanded image -->
+                <img class="expandedImg" id="expandedShifts" src="./images/paintings/shifts1.jpg">
+              </div>
+              <!-- grid below -->
+              <div class="column">
+                <img src="./images/paintings/shifts1.jpg" alt="Picture of painting Shifts" onclick="changeExpanded(this, 'expandedShifts');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/shifts2.jpg" alt="Picture of painting Shifts" onclick="changeExpanded(this, 'expandedShifts');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/shifts3.jpg" alt="Picture of painting Shifts" onclick="changeExpanded(this, 'expandedShifts');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/shifts4.jpg" alt="Picture of painting Shifts" onclick="changeExpanded(this, 'expandedShifts');">
+              </div>
+            </div>
+            </div>
+            <div class="infoSection">
+            <h1>Shifts</h1>
+            <div class="stats">
+            <div class="titles">
+              <p>size:</p>
+              <p>height:</p>
+              <p>Type:</p>
+              </div>
+              <div class="values">
+                <p> 75cm </p>
+                  <p> 57cm </p>
+                    <p> Oil/Acrylic on panel/wood </p>
+
+
+                  </div>
+                </div>
+                <div class="contactForm">
+                    <h3 class="inquiryTitle">Inquiry</h3>
+                  <div class="contactContainer">
+                        <form action="../php/action_page.php" method="post">
+                          <div class="row">
+                              <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Shifts">
+                              <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                          </div>
+                          <div class="row">
+                              <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                          </div>
+                          <div class="row">
+                              <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                          </div>
+                          <div class="row">
+                            <input class="sendButton" type="submit" value="Send Message">
+                        </div>
+                        </form>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="item">
+        <h3 class="itemTitle">Euphoria</h3>
+        <div class="imgContainer">
+          <img class="itemImage" src="./images/paintings/euphoria2.jpg" onclick="openModal('item2')" name="item2">
+          <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item2')" name="item2">
+          <div class="details">
+            <!-- <p class="amountPhotos">4 photos</p> -->
+            <p class="type">Oil/Acrylic/Synthetic on canvas</p>
+            <p class="size">50 x 40 cm</p>
+          </div>
+          <div class="detailsButton" onclick="openModal('item2')" role="button" name="item2">
+            <p>Details</p>
+          </div>
+        </div>
+        <div class="modal" id="item2Modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="imageGallery">
+            <div class="row">
+              <!-- The expanding image container -->
+              <div class="container2">
+                <!-- Expanded image -->
+                <img class="expandedImg" id="expandedEuphoria" src="./images/paintings/euphoria1.jpg">
+              </div>
+              <!-- grid below -->
+              <div class="column">
+                <img src="./images/paintings/euphoria1.jpg" alt="Picture of painting Euphoria" onclick="changeExpanded(this, 'expandedEuphoria');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/euphoria2.jpg" alt="Picture of painting Euphoria" onclick="changeExpanded(this, 'expandedEuphoria');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/euphoria3.jpg" alt="Picture of painting Euphoria" onclick="changeExpanded(this, 'expandedEuphoria');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/euphoria4.jpg" alt="Picture of painting Euphoria" onclick="changeExpanded(this, 'expandedEuphoria');">
+              </div>
+            </div>
+            </div>
+            <div class="infoSection">
+            <h1>Euphoria</h1>
+            <div class="stats">
+            <div class="titles">
+              <p>width:</p>
+              <p>height:</p>
+              <p>Type:</p>
+              </div>
+              <div class="values">
+                <p>50cm</p>
+                  <p>40cm</p>
+                    <p> Oil/Acrylic/Synthetic on canvas </p>
+
+
+                  </div>
+                </div>
+                <div class="contactForm">
+                    <h3 class="inquiryTitle">Inquiry</h3>
+                  <div class="contactContainer">
+                        <form action="../php/action_page.php" method="post">
+                          <div class="row">
+                              <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                              <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Euphoria">
+                          </div>
+                          <div class="row">
+                              <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                          </div>
+                          <div class="row">
+                              <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                          </div>
+                          <div class="row">
+                            <input class="sendButton" type="submit" value="Send Message">
+                        </div>
+                        </form>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <div class="item">
+        <h3 class="itemTitle">Opposite</h3>
+        <div class="imgContainer">
+          <img class="itemImage" src="./images/paintings/opposite3.jpg" onclick="openModal('item3')" name="item3">
+          <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item3')" name="item3">
+          <div class="details">
+            <!-- <p class="amountPhotos">4 photos</p> -->
+            <p class="type">Acrylic on wood</p>
+            <p class="size">25 x 20 cm</p>
+          </div>
+          <div class="detailsButton" onclick="openModal('item3')" role="button" name="item3">
+            <p>Details</p>
+          </div>
+        </div>
+        <div class="modal" id="item3Modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="imageGallery">
+            <div class="row">
+              <!-- The expanding image container -->
+              <div class="container2">
+                <!-- Expanded image -->
+                <img class="expandedImg" id="expandedOpposite" src="./images/paintings/opposite1.jpg">
+              </div>
+              <!-- grid below -->
+              <div class="column">
+                <img src="./images/paintings/opposite1.jpg" alt="Picture of painting Opposite" onclick="changeExpanded(this, 'expandedOpposite');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/opposite2.jpg" alt="Picture of painting Opposite" onclick="changeExpanded(this, 'expandedOpposite');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/opposite3.jpg" alt="Picture of painting Opposite" onclick="changeExpanded(this, 'expandedOpposite');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/opposite4.jpg" alt="Picture of painting Opposite" onclick="changeExpanded(this, 'expandedOpposite');">
+              </div>
+            </div>
+            </div>
+            <div class="infoSection">
+            <h1>Opposite</h1>
+            <div class="stats">
+            <div class="titles">
+              <p>size:</p>
+              <p>height:</p>
+              <p>Type:</p>
+              </div>
+              <div class="values">
+                <p> 25cm </p>
+                  <p> 20cm </p>
+                    <p> Acrylic on wood </p>
+
+
+                  </div>
+                </div>
+                <div class="contactForm">
+                    <h3 class="inquiryTitle">Inquiry</h3>
+                  <div class="contactContainer">
+                        <form action="../php/action_page.php" method="post">
+                          <div class="row">
+                              <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                              <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Opposite">
+                          </div>
+                          <div class="row">
+                              <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                          </div>
+                          <div class="row">
+                              <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                          </div>
+                          <div class="row">
+                            <input class="sendButton" type="submit" value="Send Message">
+                        </div>
+                        </form>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="item">
+        <h3 class="itemTitle">Time</h3>
+        <div class="imgContainer">
+          <img class="itemImage" src="./images/paintings/time2.jpg" onclick="openModal('item4')" name="item4">
+          <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item4')" name="item4">
+          <div class="details">
+            <!-- <p class="amountPhotos">4 photos</p> -->
+            <p class="type">Acrylic/Oil on canvas</p>
+            <p class="size">60 x 40 cm</p>
+          </div>
+          <div class="detailsButton" onclick="openModal('item4')" role="button" name="item4">
+            <p>Details</p>
+          </div>
+        </div>
+        <div class="modal" id="item4Modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="imageGallery">
+            <div class="row">
+              <!-- The expanding image container -->
+              <div class="container2">
+                <!-- Expanded image -->
+                <img class="expandedImg" id="expandedTime" src="./images/paintings/time1.jpg">
+              </div>
+              <!-- grid below -->
+              <div class="column">
+                <img src="./images/paintings/time1.jpg" alt="Picture of painting Time" onclick="changeExpanded(this, 'expandedTime');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/time2.jpg" alt="Picture of painting Time" onclick="changeExpanded(this, 'expandedTime');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/time3.jpg" alt="Picture of painting Time" onclick="changeExpanded(this, 'expandedTime');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/time4.jpg" alt="Picture of painting Time" onclick="changeExpanded(this, 'expandedTime');">
+              </div>
+            </div>
+            </div>
+            <div class="infoSection">
+            <h1>Time</h1>
+            <div class="stats">
+            <div class="titles">
+              <p>width:</p>
+              <p>height:</p>
+              <p>Type:</p>
+              </div>
+              <div class="values">
+                <p> 60cm </p>
+                  <p> 40cm </p>
+                    <p> Acrylic/Oil on canvas </p>
+
+
+                  </div>
+                </div>
+                <div class="contactForm">
+                    <h3 class="inquiryTitle">Inquiry</h3>
+                  <div class="contactContainer">
+                        <form action="../php/action_page.php" method="post">
+                          <div class="row">
+                              <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                              <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Time">
+                          </div>
+                          <div class="row">
+                              <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                          </div>
+                          <div class="row">
+                              <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                          </div>
+                          <div class="row">
+                            <input class="sendButton" type="submit" value="Send Message">
+                        </div>
+                        </form>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="item">
+        <h3 class="itemTitle">Autumn</h3>
+        <div class="imgContainer">
+          <img class="itemImage" src="./images/paintings/autumn2.jpg" onclick="openModal('item5')" name="item5">
+          <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item5')" name="item5">
+          <div class="details">
+            <!-- <p class="amountPhotos">4 photos</p> -->
+            <p class="type">Oil/Acrylic on 3d canvas</p>
+            <p class="size">60 x 60 cm</p>
+          </div>
+          <div class="detailsButton" onclick="openModal('item5')" role="button" name="item5">
+            <p>Details</p>
+          </div>
+        </div>
+        <div class="modal" id="item5Modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="imageGallery">
+            <div class="row">
+              <!-- The expanding image container -->
+              <div class="container2">
+                <!-- Expanded image -->
+                <img class="expandedImg" id="expandedAutumn" class="biggerImage" src="./images/paintings/autumn1.jpg">
+              </div>
+              <!-- grid below -->
+              <div class="column">
+                <img src="./images/paintings/autumn1.jpg" alt="Picture of painting Autumn" onclick="changeExpanded(this, 'expandedAutumn');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/autumn2.jpg" alt="Picture of painting Autumn" onclick="changeExpanded(this, 'expandedAutumn');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/autumn3.jpg" alt="Picture of painting Autumn" onclick="changeExpanded(this, 'expandedAutumn');">
+              </div>
+              <div class="column">
+                <img src="./images/paintings/autumn4.jpg" alt="Picture of painting Autumn" onclick="changeExpanded(this, 'expandedAutumn');">
+              </div>
+            </div>
+            </div>
+            <div class="infoSection">
+            <h1>Autumn</h1>
+            <div class="stats">
+            <div class="titles">
+              <p>width:</p>
+              <p>height:</p>
+              <p>Type:</p>
+              </div>
+              <div class="values">
+                <p> 60 cm</p>
+                  <p> 60 cm </p>
+                    <p> Oil/Acrylic on 3d canvas </p>
+
+
+                  </div>
+                </div>
+                <div class="contactForm">
+                    <h3 class="inquiryTitle">Inquiry</h3>
+                  <div class="contactContainer">
+                        <form action="../php/action_page.php" method="post">
+                          <div class="row">
+                              <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                              <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Autumn">
+                          </div>
+                          <div class="row">
+                              <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                          </div>
+                          <div class="row">
+                              <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                          </div>
+                          <div class="row">
+                            <input class="sendButton" type="submit" value="Send Message">
+                        </div>
+                        </form>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="item">
+          <h3 class="itemTitle">Sundown</h3>
+          <div class="imgContainer">
+            <img class="itemImage" src="./images/paintings/sundown2.jpg" onclick="openModal('item6')" name="item6">
+            <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item6')" name="item6">
+            <div class="details">
+              <!-- <p class="amountPhotos">4 photos</p> -->
+              <p class="type">Oil/Acrylic on 3d canvas</p>
+              <p class="size">40 x 40 cm</p>
+            </div>
+            <div class="detailsButton" onclick="openModal('item6')" role="button" name="item6">
+              <p>Details</p>
+            </div>
+          </div>
+          <div class="modal" id="item6Modal">
+          <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="imageGallery">
+              <div class="row">
+                <!-- The expanding image container -->
+                <div class="container2">
+                  <!-- Expanded image -->
+                  <img class="expandedImg" id="expandedSundown" src="./images/paintings/sundown1.jpg">
+                </div>
+                <!-- grid below -->
+                <div class="column">
+                  <img src="./images/paintings/sundown1.jpg" alt="Picture of painting Sundown" onclick="changeExpanded(this, 'expandedSundown');">
+                </div>
+                <div class="column">
+                  <img src="./images/paintings/sundown2.jpg" alt="Picture of painting Sundown" onclick="changeExpanded(this, 'expandedSundown');">
+                </div>
+                <div class="column">
+                  <img src="./images/paintings/sundown3.jpg" alt="Picture of painting Sundown" onclick="changeExpanded(this, 'expandedSundown');">
+                </div>
+                <div class="column">
+                  <img src="./images/paintings/sundown4.jpg" alt="Picture of painting Sundown" onclick="changeExpanded(this, 'expandedSundown');">
+                </div>
+              </div>
+              </div>
+              <div class="infoSection">
+              <h1>Sundown</h1>
+              <div class="stats">
+              <div class="titles">
+                <p>width:</p>
+                <p>height:</p>
+                <p>Type:</p>
+                </div>
+                <div class="values">
+                  <p> 40cm </p>
+                    <p> 40cm </p>
+                      <p> Oil/Acrylic on 3d canvas</p>
+
+
+                    </div>
+                  </div>
+                  <div class="contactForm">
+                      <h3 class="inquiryTitle">Inquiry</h3>
+                    <div class="contactContainer">
+                          <form action="../php/action_page.php" method="post">
+                            <div class="row">
+                                <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                                <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Sundown">
+                            </div>
+                            <div class="row">
+                                <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                            </div>
+                            <div class="row">
+                                <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                            <div class="row">
+                              <input class="sendButton" type="submit" value="Send Message">
+                          </div>
+                          </form>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="item">
+            <h3 class="itemTitle">Abyss</h3>
+            <div class="imgContainer">
+              <img class="itemImage" src="./images/paintings/abyss2.jpg" onclick="openModal('item7')"  name="item7">
+              <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item7')"  name="item7">
+              <div class="details">
+                <!-- <p class="amountPhotos">4 photos</p> -->
+                <p class="type">Oil/Acrylic on 3d canvas</p>
+                <p class="size">50 x 50 cm</p>
+              </div>
+              <div class="detailsButton" onclick="openModal('item7')" role="button" name="item7">
+                <p>Details</p>
+              </div>
+            </div>
+            <div class="modal" id="item7Modal">
+            <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="imageGallery">
+                <div class="row">
+                  <!-- The expanding image container -->
+                  <div class="container2">
+                    <!-- Expanded image -->
+                    <img class="expandedImg" id="expandedAbyss" src="./images/paintings/abyss1.jpg">
+                  </div>
+                  <!-- grid below -->
+                  <div class="column">
+                    <img src="./images/paintings/abyss1.jpg" alt="Picture of painting Abyss" onclick="changeExpanded(this, 'expandedAbyss');">
+                  </div>
+                  <div class="column">
+                    <img src="./images/paintings/abyss2.jpg" alt="Picture of painting Abyss" onclick="changeExpanded(this, 'expandedAbyss');">
+                  </div>
+                  <div class="column">
+                    <img src="./images/paintings/abyss3.jpg" alt="Picture of painting Abyss" onclick="changeExpanded(this, 'expandedAbyss');">
+                  </div>
+                  <div class="column">
+                    <img src="./images/paintings/abyss4.jpg" alt="Picture of painting Abyss" onclick="changeExpanded(this, 'expandedAbyss');">
+                  </div>
+                </div>
+                </div>
+                <div class="infoSection">
+                <h1>Abyss</h1>
+                <div class="stats">
+                <div class="titles">
+                  <p>width:</p>
+                  <p>height:</p>
+                  <p>Type:</p>
+                  </div>
+                  <div class="values">
+                    <p> 50cm </p>
+                      <p> 50cm </p>
+                        <p> Oil/Acrylic on 3d canvas</p>
+
+
+                      </div>
+                    </div>
+                    <div class="contactForm">
+                        <h3 class="inquiryTitle">Inquiry</h3>
+                      <div class="contactContainer">
+                            <form action="../php/action_page.php" method="post">
+                              <div class="row">
+                                  <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                                  <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Abyss">
+                              </div>
+                              <div class="row">
+                                  <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                              </div>
+                              <div class="row">
+                                  <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                              </div>
+                              <div class="row">
+                                <input class="sendButton" type="submit" value="Send Message">
+                            </div>
+                            </form>
+                          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+
+            <div class="item">
+              <h3 class="itemTitle">Lascaux</h3>
+              <div class="imgContainer">
+                <img class="itemImage" src="./images/paintings/lascaux2.jpg" onclick="openModal('item8')" name="item8">
+                <img class="buttonOverlay" src="./plusButton.png" onclick="openModal('item8')" name="item8">
+                <div class="details">
+                  <!-- <p class="amountPhotos">4 photos</p> -->
+                  <p class="type">Oil/Acrylic on 3d canvas</p>
+                  <p class="size">40 x 40 cm</p>
+                </div>
+                <div class="detailsButton" onclick="openModal('item8')" role="button" name="item8">
+                  <p>Details</p>
+                </div>
+              </div>
+              <div class="modal" id="item8Modal">
+              <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="imageGallery">
+                  <div class="row">
+                    <!-- The expanding image container -->
+                    <div class="container2">
+                      <!-- Expanded image -->
+                      <img class="expandedImg" id="expandedLascaux" src="./images/paintings/lascaux1.jpg">
+                    </div>
+                    <!-- grid below -->
+                    <div class="column">
+                      <img src="./images/paintings/lascaux1.jpg" alt="Picture of painting Lascaux" onclick="changeExpanded(this, 'expandedLascaux');">
+                    </div>
+                    <div class="column">
+                      <img src="./images/paintings/lascaux2.jpg" alt="Picture of painting Lascaux" onclick="changeExpanded(this, 'expandedLascaux');">
+                    </div>
+                    <div class="column">
+                      <img src="./images/paintings/lascaux3.jpg" alt="Picture of painting Lascaux" onclick="changeExpanded(this, 'expandedLascaux');">
+                    </div>
+                    <div class="column">
+                      <img src="./images/paintings/lascaux4.jpg" alt="Picture of painting Lascaux" onclick="changeExpanded(this, 'expandedLascaux');">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="infoSection">
+                  <h1>Lascaux</h1>
+                  <div class="stats">
+                  <div class="titles">
+                    <p>width:</p>
+                    <p>height:</p>
+                    <p>Type:</p>
+                    </div>
+                    <div class="values">
+                      <p> 40cm </p>
+                        <p> 40cm </p>
+                          <p>Oil/Acrylic on 3d canvas </p>
+
+
+                        </div>
+                      </div>
+                      <div class="contactForm">
+                          <h3 class="inquiryTitle">Inquiry</h3>
+                        <div class="contactContainer">
+                              <form action="../php/action_page.php" method="post">
+                                <div class="row">
+                                    <input class="nameInput" type="text" id="firstname" name="firstname" placeholder="Your name..">
+                                    <input class="paintingName" type="text" id="paintingName" name="paintingName" value="Lascaux">
+                                </div>
+                                <div class="row">
+                                    <input class="emailInput" type="text" id="email" name="email" placeholder="Your email..">
+                                </div>
+                                <div class="row">
+                                    <textarea class="formMessage" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                                </div>
+                                <div class="row">
+                                  <input class="sendButton" type="submit" value="Send Message">
+                              </div>
+                              </form>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+      </div>
+  </section>
+
+  <section class="contactSection">
+    <div class="contactFormMain">
+        <h3 class="contactTitle">Inquiry</h3>
+      <div class="contactContainerMain">
+            <form action="../php/action_page.php" method="post">
+              <div class="rowMain">
+                  <input class="nameInputMain" type="text" id="firstname" name="firstname" placeholder="Your name..">
+              </div>
+              <div class="rowMain">
+                  <input class="emailInputMain" type="text" id="email" name="email" placeholder="Your email..">
+              </div>
+              <div class="rowMain">
+                  <textarea class="formMessageMain" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+              <div class="rowMain">
+                <input class="sendButtonMain" type="submit" value="Send Message">
+            </div>
+            </form>
+          </div>
+        </div>
+  </section>
+
+
+
+</div>
+
+<script type="text/javascript" src="./javascript.js"></script>
